@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import SignIn from "./pages/auth/SignIn";
 import SignUp from "./pages/auth/SignUp";
 import AuthLayout from "./Layout/AuthLayout";
+import HelpPage from "./pages/HelpPage";
 const App = () => {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ const App = () => {
         <Router>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/help/:section" element={<HelpPage />} />
             
             {/* Auth Routes */}
             <Route path="/auth" element={<AuthLayout/>}>

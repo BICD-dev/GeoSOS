@@ -1,0 +1,6 @@
+
+@tailwind utilities;
+
+.home-span{
+    @apply bg-amber-300 font-bold
+}
