@@ -2,10 +2,10 @@ import { useParams } from "react-router-dom";
 import MedicalEmergency from "../components/MedicalEmergency";
 import CrimeEmergency from "../components/CrimeEmergency";
 import FireEmergency from "../components/FireEmergency";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 const HelpPage = () => {
     const { section } = useParams();
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     return ( 
         <div>
             {(() => {
