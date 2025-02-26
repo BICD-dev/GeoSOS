@@ -1,6 +1,5 @@
 import Navbar from "./components/Navbar";
 import {
-  BrowserRouter as Router,
   Route,
   Routes,
   Navigate,
@@ -15,7 +14,7 @@ const App = () => {
     <div className="App">
       <Navbar />
       <div className="content">
-        <Router>
+        
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/help/:section" element={<HelpPage />} />
@@ -30,7 +29,6 @@ const App = () => {
             {/* fallback */}
             <Route path="*" element={<Navigate to="/auth" />} />
           </Routes>
-        </Router>
       </div>
     </div>
   );

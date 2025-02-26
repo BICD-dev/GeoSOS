@@ -1,10 +1,13 @@
 import medic from "../assets/medic.jpg";
 import crime from "../assets/crime-scene.webp";
 import flame from "../assets/flame.jpg";
+import ambulance from "../assets/ambulance.svg";
+import map from "../assets/map-pin.svg";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import SpanCard from "../components/cards/SpanCard";
 import { useState } from "react";
+
 const Home = () => {
   const images = [flame, crime, medic];
   // const api_key = "AIzaSyAQbt43t0MnAbC6eSSQlodH8bbDeSJu6aw" // google
@@ -86,9 +89,11 @@ const Home = () => {
         <h1 className="font-semibold my-2 text-xl ">Why GeoSOS</h1>
         <section className=" grid grid-cols-1 gap-2 md:grid-cols-3 ">
           <span className=" my-4 flex flex-col bg-white item-center rounded-sm justify-center h-[13rem] shadow-lg">
+            <img src={map} alt="map" className="w-10 border" />
             <h1 className="text-xl font-semibold capitalize">Instant Location Sharing</h1>
           </span>
           <span className=" my-4 flex flex-col bg-white item-center rounded-sm justify-center h-[13rem] shadow-lg">
+            <img src={ambulance} alt="fast" className="w-10 border" />
             <h1 className="text-xl font-semibold capitalize">Fast and reliable assistance</h1>
           </span>
           <span className=" my-4 flex flex-col bg-white item-center rounded-sm justify-center h-[13rem] shadow-lg">
