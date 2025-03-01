@@ -9,6 +9,8 @@ import SignIn from "./pages/auth/SignIn";
 import SignUp from "./pages/auth/SignUp";
 import AuthLayout from "./Layout/AuthLayout";
 import HelpPage from "./pages/HelpPage";
+import Dashboard from "./pages/helper/Dashboard";
+import PrivateRoute from "./components/PrivateRoute";
 const App = () => {
   return (
     <div className="App">
@@ -25,7 +27,12 @@ const App = () => {
               <Route path="sign-in" element={<SignIn />} />
               <Route path="sign-up" element={<SignUp />} />
             </Route>
-
+            {/* Victim helper dashboard */}
+            <Route path="/helper/dashboard" element = {
+          <PrivateRoute>
+            <Dashboard />
+          </PrivateRoute>
+        } />
             {/* fallback */}
             <Route path="*" element={<Navigate to="/auth" />} />
           </Routes>

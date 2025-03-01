@@ -88,16 +88,16 @@ const Home = () => {
       <section className="p-4 bg-blue-200 h-fit text-center mt-3 mb-3">
         <h1 className="font-semibold my-2 text-xl ">Why GeoSOS</h1>
         <section className=" grid grid-cols-1 gap-2 md:grid-cols-3 ">
-          <span className=" my-4 flex flex-col bg-white item-center rounded-sm justify-center h-[13rem] shadow-lg">
-            <img src={map} alt="map" className="w-10 border" />
-            <h1 className="text-xl font-semibold capitalize">Instant Location Sharing</h1>
+          <span className=" my-4 flex flex-col bg-white items-center text-center rounded-sm justify-center h-[13rem] shadow-lg">
+            <img src={map} alt="map" className="w-10 " />
+            <h1 className="text-xl font-semibold capitalize mt-10">Instant Location Sharing</h1>
           </span>
-          <span className=" my-4 flex flex-col bg-white item-center rounded-sm justify-center h-[13rem] shadow-lg">
-            <img src={ambulance} alt="fast" className="w-10 border" />
-            <h1 className="text-xl font-semibold capitalize">Fast and reliable assistance</h1>
+          <span className=" my-4 flex flex-col bg-white items-center rounded-sm justify-center h-[13rem] shadow-lg">
+            <img src={ambulance} alt="fast" className="w-10 " />
+            <h1 className="text-xl font-semibold capitalize mt-10">Fast and reliable assistance</h1>
           </span>
-          <span className=" my-4 flex flex-col bg-white item-center rounded-sm justify-center h-[13rem] shadow-lg">
-            <h1 className="text-xl font-semibold capitalize">Offline SOS support</h1>
+          <span className=" my-4 flex flex-col bg-white items-center rounded-sm justify-center h-[13rem] shadow-lg">
+            <h1 className="text-xl font-semibold capitalize mt-10">Offline SOS support</h1>
           </span>
         </section>
       </section>
