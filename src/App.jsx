@@ -29,9 +29,9 @@ const App = () => {
             </Route>
             {/* Victim helper dashboard */}
             <Route path="/helper/dashboard" element = {
-          <PrivateRoute>
+          // <PrivateRoute>
             <Dashboard />
-          </PrivateRoute>
+          // </PrivateRoute>
         } />
             {/* fallback */}
             <Route path="*" element={<Navigate to="/auth" />} />

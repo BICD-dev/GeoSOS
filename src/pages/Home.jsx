@@ -10,7 +10,6 @@ import { useState } from "react";
 
 const Home = () => {
   const images = [flame, crime, medic];
-  // const api_key = "AIzaSyAQbt43t0MnAbC6eSSQlodH8bbDeSJu6aw" // google
   const [location, setLocation] = useState({ lat: null, long: null });
   const [error, setError] = useState(null);
 
