@@ -32,6 +32,7 @@ const FireEmergency = () => {
         fullName: fullName,
         requestTime: serverTimestamp(),
         location: new GeoPoint(latitude, longitude),
+        rescueStatus:"pending"
       });
 
       console.log("Report sent with name:", fullName);

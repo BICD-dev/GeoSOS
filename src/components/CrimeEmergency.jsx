@@ -33,6 +33,7 @@ const CrimeEmergency = () => {
         EmergencyType: "crime",
         fullName: fullName,
         requestTime: serverTimestamp(),
+        rescueStatus:"pending",
         location: new GeoPoint(latitude, longitude),
       });
 

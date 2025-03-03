@@ -1,5 +1,4 @@
 import VictimInfo from "../../components/VictimInfo";
-
 const Dashboard = () => {
     return ( 
         <div className="p-4 flex flex-col items-justify">

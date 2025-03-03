@@ -3,6 +3,7 @@ import crime from "../assets/crime-scene.webp";
 import flame from "../assets/flame.jpg";
 import ambulance from "../assets/ambulance.svg";
 import map from "../assets/map-pin.svg";
+import offline from "../assets/offline.svg";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import SpanCard from "../components/cards/SpanCard";
@@ -52,7 +53,6 @@ const Home = () => {
       });
   }
   
-  // console.log(auth?.currentUser?.uid)
 
   return (
     <div className=" text-center ">
@@ -97,6 +97,7 @@ const Home = () => {
             <h1 className="text-xl font-semibold capitalize mt-10">Fast and reliable assistance</h1>
           </span>
           <span className=" my-4 flex flex-col bg-white items-center rounded-sm justify-center h-[13rem] shadow-lg">
+            <img src={offline} alt="offline" className="w-10 " />
             <h1 className="text-xl font-semibold capitalize mt-10">Offline SOS support</h1>
           </span>
         </section>

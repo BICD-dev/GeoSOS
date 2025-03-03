@@ -2,6 +2,8 @@ import { auth } from "../../config/firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-hot-toast"; // Import toast
+import { Toaster } from "react-hot-toast"; // Import Toaster
 
 const SignIn = () => {
 
@@ -15,17 +17,20 @@ const SignIn = () => {
     try {
       setIsPending(true);
       await signInWithEmailAndPassword(auth, email, password);
-      navigate('/');
+      toast.success("Signed in successfully! 🎉"); // Success toast
+      setTimeout(() => navigate('/'), 1500);
       setIsPending(false);
     } catch (error) {
-      setIsPending(false)
-      console.error('Login failed ', error.message);
+      toast.error(`Login failed: ${error.message}`); // Error toast
+    }finally {
+      setIsPending(false);
     }
   };
  
 
   return (
     <div className="mt-9 flex justify-center items-center min-h-screen bg-gray-100">
+      <Toaster position="top-center" reverseOrder={false} /> {/* Toast notifications */}
     <form
       className="w-full max-w-md bg-white rounded-lg shadow-md p-6"
     >
