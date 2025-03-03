@@ -7,7 +7,8 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import SpanCard from "../components/cards/SpanCard";
 import { useState } from "react";
-
+import UserProfile from "../components/FetchUserFulName";
+import {auth} from "../config/firebase"
 const Home = () => {
   const images = [flame, crime, medic];
   const [location, setLocation] = useState({ lat: null, long: null });
@@ -51,7 +52,7 @@ const Home = () => {
       });
   }
   
-  
+  // console.log(auth?.currentUser?.uid)
 
   return (
     <div className=" text-center ">
